@@ -1,0 +1,54 @@
+{
+    "name": "zbundy/laravel-enums",
+    "description": "Laravel migration support for enums",
+    "keywords": [
+        "zbundy",
+        "laravel",
+        "enums"
+    ],
+    "homepage": "https://github.com/zbundy/laravel-enums",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zack Bundy",
+            "email": "hi@zbundy.com",
+            "homepage": "https://zbundy.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "illuminate/database": "^8.75",
+        "illuminate/support": "^8.75"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.23",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zbundy\\LaravelEnums\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zbundy\\LaravelEnums\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zbundy\\LaravelEnums\\LaravelEnumsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
